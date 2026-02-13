@@ -6,7 +6,6 @@ public class perulangan {
         Scanner sc = new Scanner(System.in);
 
         long nim;
-
         System.out.println("Input NIM: ");
         nim = sc.nextLong();
 
@@ -17,10 +16,10 @@ public class perulangan {
         }
 
         System.out.println("n " +n);
-        System.out.println("Output: ");
+        System.out.println("output: ");
 
-        for (int i = 1; i<=n; i++) {
-            if (i == 10 || i == 15) {
+        for (int i=1; i<=n; i++) {
+            if (i==10 || i==15) {
                 continue; 
             } if (i%3 == 0) {
                 System.out.println("# ");
@@ -30,8 +29,6 @@ public class perulangan {
                 System.out.println("* ");
             }
         }
-
         sc.close();
-        
     }
 }

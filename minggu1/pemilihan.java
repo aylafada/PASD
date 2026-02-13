@@ -9,7 +9,7 @@ public class pemilihan {
         double nilaiAkhir;
         String nilaiHuruf;
 
-        System.out.println("Program Menghitung Nilai Akhir");
+        System.out.println("Program Menghitung Nilai akhir");
         System.out.println("=======================");
         System.out.println("Masukkan nilai tugas: ");
         nilaiTugas = sc.nextInt();
