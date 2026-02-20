@@ -29,7 +29,7 @@ public class MataKuliah06 {
             jumlahJam -= jam;
             System.out.println("Jumlah jam setelah dikurangi: " +jumlahJam);
         } else if (jumlahJam<=jam) {
-            System.out.println("Pengurangan tidak dapat dilakukan. ");
+            System.out.println("Pengurangan tidak dapat dilakukan.");
         }
         
     }
