@@ -27,7 +27,7 @@ public class sorting06 {
 
     void tampil() {
         for (int i=0; i<jumData; i++) {
-            System.out.println(data[i] +" ");
+            System.out.print(data[i] +" ");
         }
         System.out.println();
     }
