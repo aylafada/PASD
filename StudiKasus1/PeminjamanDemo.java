@@ -34,6 +34,10 @@ public class PeminjamanDemo {
             System.out.println("3. Tampilkan Peminjaman");
             System.out.println("4. Urutkan Berdasarkan Denda");
             System.out.println("5. Cari Berdasarkan NIM");
+            //Modifikasi B2
+            System.out.println("6. Cari berdasarkan Judul Buku");
+            //Modifikasi C2
+            System.out.println("7. Total Lama Peminjaman per Mahasiswa");
             System.out.println("0. Keluar");
             System.out.print("Pilih: ");
             pilih = sc.nextInt();
@@ -42,11 +46,11 @@ public class PeminjamanDemo {
             switch (pilih) {
 
                 case 1:
-                    for (Mahasiswa m : mhs) m.tampilMahasiswa();
+                    for (Mahasiswa m:mhs) m.tampilMahasiswa();
                     break;
 
                 case 2:
-                    for (Buku b : buku) b.tampilBuku();
+                    for (Buku b:buku) b.tampilBuku();
                     break;
 
                 case 3:
@@ -63,8 +67,17 @@ public class PeminjamanDemo {
                     String nim = sc.nextLine();
                     data.cariNIM(nim);
                     break;
+                //Modifikasi B2
+                case 6:
+                    System.out.print("Masukkan judul buku: ");
+                    String judul = sc.nextLine();
+                    data.cariJudul(judul);
+                    break;
+                //Modifikasi C2
+                case 7:
+                    data.totalLamaPerMahasiswa();
+                    break;
             }
-
         } while (pilih != 0);
     }
 }

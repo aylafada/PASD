@@ -13,5 +13,12 @@ public class Buku {
         System.out.println("Kode: " +kodeBuku +" | " +"Judul: " +judul +" | " +"Tahun: " +tahunTerbit );
     }
 
-
+    //Modifikasi B2
+    static void cariJudul(Buku[]buku, String judul) {
+        for(Buku b:buku) {
+            if (b.judul.equalsIgnoreCase(judul)) {
+                b.tampilBuku();
+            }
+        }
+    }
 }
