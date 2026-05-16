@@ -85,4 +85,19 @@ public class StackTugasMhs06 {
     public int hitungTugas() {
         return top+1; //top = -1: 0 tugas, top=0: 1 tugas, dst
     }
+
+    //PERCOBAAN 2
+    public String konversiDesimalkeBiner(int nilai) {
+        StackKonversi06 stack = new StackKonversi06();
+        while (nilai > 0) {
+            int sisa = nilai % 2;
+            stack.push(sisa);
+            nilai = nilai/2;
+        }
+        String biner = new String();
+        while(!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
+    }
 }
