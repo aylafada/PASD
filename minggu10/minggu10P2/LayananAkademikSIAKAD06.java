@@ -22,7 +22,7 @@ public class LayananAkademikSIAKAD06 {
             sc.nextLine();
 
             switch (pilihan) {
-                case 1:s
+                case 1:
                     System.out.print("NIM: ");
                     String nim = sc.nextLine();
                     System.out.print("Nama: ");
