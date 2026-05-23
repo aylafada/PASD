@@ -1,4 +1,4 @@
-package minggu10P2;
+package minggu10.minggu10P2;
 
 public class Mahasiswa06 {
 

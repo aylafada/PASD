@@ -1,4 +1,4 @@
-package minggu10P1;
+package minggu10;
 
 public class Queue06 {
     //atribut-atribut queue

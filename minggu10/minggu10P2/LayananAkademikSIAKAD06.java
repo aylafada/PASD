@@ -1,4 +1,4 @@
-package minggu10P2;
+package minggu10.minggu10P2;
 
 import java.util.Scanner;
 
@@ -22,7 +22,7 @@ public class LayananAkademikSIAKAD06 {
             sc.nextLine();
 
             switch (pilihan) {
-                case 1:
+                case 1:s
                     System.out.print("NIM: ");
                     String nim = sc.nextLine();
                     System.out.print("Nama: ");

@@ -1,4 +1,4 @@
-package minggu10P2;
+package minggu10.minggu10P2;
 
 public class AntrianLayanan06 {
 
@@ -17,7 +17,7 @@ public class AntrianLayanan06 {
         this.size = 0;
     }
 
-    //isEmpty
+    //isEmptys
     public boolean isEmpty() {
         if (size == 0) {
             return true;
