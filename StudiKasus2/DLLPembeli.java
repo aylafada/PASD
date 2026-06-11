@@ -30,8 +30,8 @@ public class DLLPembeli {
         }
 
         pembeli dataKeluar = head.data;
-        head = head.next;
-        head = head.next;
+        //head = head.next;
+        //head = head.next;
 
         if (head == tail) {
             head = null;
@@ -50,14 +50,14 @@ public class DLLPembeli {
             return;
         }
 
-        System.out.println("\nDaftar Antrian Pembeli");
         System.out.println("================================================");
-        System.out.printf("%-15s %-20s %-15s\n", "No Antrian", "Nama", "No HP");
+        System.out.println("Daftar Antrian Pembeli");
         System.out.println("================================================");
+        System.out.printf("%-15s %-20s %-10s\n", "No Antrian", "Nama", "No HP");
         nodePembeli current = head;
 
         while (current != null) {
-            System.out.printf("%-10s %-15s %-15\n", current.data.noAntrian, current.data.namaPembeli, current.data.noHp);
+            System.out.printf("%-15s %-20s %-10s\n", current.data.noAntrian, current.data.namaPembeli, current.data.noHp);
             current = current.next;
         }
 

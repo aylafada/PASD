@@ -48,28 +48,18 @@ public class DLLPesanan {
         } while(swap);
     }
 
-        int totalPendapatan() {
-        int total = 0;
-        nodePesanan current = head;
-        while (current != null) {
-            total += current.data.harga;
-            current = current.next;
-        }
-        return total;
-    }
-
     void print() {
         if(isEmpty()) {
             System.out.println("Belum ada pesanan");
             return;
         }
-        System.out.println("\nLAPORAN PESANAN");
         System.out.println("========================================");
-        System.out.printf("%-15s %-20s %-10s\n", "Kode", "Nama Pesanan", "Harga");
+        System.out.println("LAPORAN PESANAN (URUT NAMA PESANAN)");
         System.out.println("========================================");
+        System.out.printf("%-10s %-20s %-10s\n", "Kode", "Nama Pesanan", "Harga");
         nodePesanan current = head;
         while (current != null) {
-            System.out.printf("%-15d %-20s %-10d\n", current.data.kodePesanan, current.data.namaPesanan, current.data.harga);
+            System.out.printf("%-10d %-20s %-10d\n", current.data.kodePesanan, current.data.namaPesanan, current.data.harga);
             current = current.next;
         }
     }
