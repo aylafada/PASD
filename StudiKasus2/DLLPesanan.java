@@ -14,7 +14,6 @@ public class DLLPesanan {
         return head == null;
     }
 
-    //enqueue
     public void tambahPesanan(pesanan data) {
         nodePesanan newNode = new nodePesanan(data);
 
@@ -62,6 +61,25 @@ public class DLLPesanan {
             System.out.printf("%-10d %-20s %-10d\n", current.data.kodePesanan, current.data.namaPesanan, current.data.harga);
             current = current.next;
         }
+    }
+
+    // Opsi 1 
+    public void pesananTermahal() {
+        if(isEmpty()) {
+            System.out.println("belum ada pesanan");
+            return;
+        }
+        nodePesanan current =head;
+        pesanan max =head.data;
+        while(current != null) {
+            if(current.data.harga > max.harga) {
+                max =current.data;
+            }  current =current.next;
+        }
+        System.out.println("pesanan termahal");
+        System.out.println("Kode: " +max.kodePesanan);
+        System.out.println("Nama: " +max.namaPesanan);
+        System.out.println("Harga: " +max.harga);
     }
 
 }
